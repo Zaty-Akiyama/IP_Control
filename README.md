@@ -18,7 +18,7 @@ $ip_configs = array(
 $ip_control = new IP_Control( $ip_configs );
 
 $ip_check = $ip_control->ip_lock_check(); // Boolean
-// $ip_control->ip_recoding();
+// $ip_control->ip_recording();
 // $ip_control->ip_accomplished();
 ```
 
@@ -33,5 +33,5 @@ $ip_check = $ip_control->ip_lock_check(); // Boolean
 
 ### IP管理メソッド
 $ip_control->ip_lock_check\(\) はそのIPアドレスが現在ロック中か確認することができます。ロック中であればtrueが返ります。<br>
-$ip_control->ip_recoding\(\) はアクセスされたIPアドレスを記録します。認証できていない状態で記録されるので、ログイン可否の前に使用することを想定します。<br>
+$ip_control->ip_recording\(\) はアクセスされたIPアドレスを記録します。認証できていない状態で記録されるので、ログイン可否の前に使用することを想定します。<br>
 $ip_control->ip_accomplished\(\) はIPアドレスを認証します。ログイン完了後に使用することを想定しています。
