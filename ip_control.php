@@ -91,8 +91,6 @@ class IP_Control
    */
   private static function initial_options ( $options )
   {
-    if( !$options ) return;
-
     $return_options = array();
     $return_options['time_interval'] = $options['time_interval'] ?? 5 * 60;
     $return_options['save'] = $options['save'] ?? true;
